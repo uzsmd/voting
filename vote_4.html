@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>voting</title>
+    <link rel="stylesheet" href="css/vote.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vote.js"></script>
+</head>
+
+<body>
+    <h1>投票画面</h1>
+
+    <article>
+        <section id="section1">
+            <p class="image"><img id="img1" src="img/pic_01.jpg" width="100%" alt="きのこの山"></p>
+            <div class="lavel_area">
+                <h2 id="img1_name">きのこの山</h2>
+            </div>
+        </section>
+
+        <section id="section2">
+            <p class="image"><img id="img2" src="img/pic_02.jpg" width="100%" alt="たけのこの里"></p>
+            <div class="lavel_area">
+                <h2 id="img2_name">たけのこの里</h2>
+            </div>
+        </section>
+
+        <section id="section3">
+            <p class="image"><img id="img3" src="img/pic_02.jpg" width="100%" alt="XXXXX"></p>
+            <div class="lavel_area">
+                <h2 id="img3_name">XXXXX</h2>
+            </div>
+        </section>
+
+        <section id="section4">
+            <p class="image"><img id="img4" src="img/pic_02.jpg" width="100%" alt="YYYYY"></p>
+            <div class="lavel_area">
+                <h2 id="img4_name">YYYYY</h2>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div class="submit_area">
+            <input type="text" id="name" placeholder="Your Name" />
+            <button id="sub" class="submit_btn">OK</button>
+            <input type="hidden" id="check_flg" value="">
+            <input type="hidden" id="vote_flg" value="">
+        </div>
+    </footer>
+</body>
+</html>
