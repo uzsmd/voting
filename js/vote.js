@@ -1,14 +1,18 @@
 $(function(){
     $('#section1').click(function () {
-        $("#check_flg").val($("#img1_name").text());
-        $("#img1").css({opacity: "0.5"});
-        $("#img2").css({opacity: "1"});
+        if ($("#vote_flg").val() == "") {
+            $("#check_flg").val($("#img1_name").text());
+            $("#img1").css({opacity: "0.7"});
+            $("#img2").css({opacity: "1"});
+        }
     });
 
     $('#section2').click(function () {
-        $("#check_flg").val($("#img2_name").text());
-        $("#img2").css({opacity: "0.5"});
-        $("#img1").css({opacity: "1"});
+        if ($("#vote_flg").val() == "") {
+            $("#check_flg").val($("#img2_name").text());
+            $("#img2").css({opacity: "0.7"});
+            $("#img1").css({opacity: "1"});
+        }
     });
 
     $("#sub").click(function() {
